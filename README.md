@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DI UNIDAD 2, ACTIVIDAD 4
+## Ejercicio 1: dividir una lista en dos
+En List.js muestra una lista de todas las personas.
 
-## Getting Started
+Cambiala para mostrar dos listas separadas, una detrás de otra : Químicos y Todos los demás. Como antes, puedes saber que persona es química comprobando si person.profession === 'químico'.
 
-First, run the development server:
+## Ejercicio 2: lista anidadas en un componente
+¡Haz una lista de recetas desde RecipeList.js! Por cada receta en el array, coloca su nombre en un h2 y lista sus ingredientes en un ul.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Ejercicio 3: extraer un componente de elemento de lista 
+En el componente RecipeList2 contiene dos llamadas map anidadas. Para simplificarlo, extrae un componente Recipe de el que aceptará las props id, name, y ingredients. ¿Dónde colocarías la key exterior y por qué?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Ejercicio 4: extraer un componente de elemento de lista 
+Este ejemplo renderiza un famoso haiku de Tachibana Hokushi, con cada línea envuelta en una etiqueta p. Tu trabajo consiste en insertar un separador hr entre cada párrafo.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Un haiku solo tiene tres líneas, pero tu solución debería funcionar con cualquier número de líneas. Fíjate que los elementos hr solo aparecen entre los elementos p, ¡no en el inicio o el final! Código en Poem.js
