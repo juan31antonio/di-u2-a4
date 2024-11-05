@@ -11,7 +11,7 @@ const poem = {
       <article>
         {poem.lines.map((line, index) =>
         <>
-        {index != 0 && <br/>}
+        {index != 0 && <hr/>}
         <p key={index}>
           {line}
         </p>
